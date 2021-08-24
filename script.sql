@@ -71,13 +71,13 @@ REFERENCES orders(order_id);
 
 SELECT customer_email
 FROM store
-WHERE order_date > '2021-08-25';
+WHERE order_date > '2019-08-25';
 
 SELECT customer_email
 FROM customers, orders
 WHERE customers.customer_id = orders.customer_id
 AND
-orders.order_date > '2021-07-25';
+orders.order_date > '2019-07-25';
 
 WITH all_items AS (
 SELECT item_1_id as item_id 
